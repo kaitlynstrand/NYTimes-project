@@ -1,7 +1,7 @@
 // Built by LucyBot. www.lucybot.com
 
 
-$(document).on('click', 'button', function(){
+$(document).on('click', '#search-btn', function(){
 
 	console.log('click');	
 
@@ -20,8 +20,24 @@ $(document).on('click', 'button', function(){
 
 		console.log(result.response.docs[0].headline.main)
 
+		var currentArticle = $('<div>');
+		currentArticle.addClass('result-div');
+		currentArticle.text(result.response.docs[0].headline.main);
+		currentArticle.append('<br>');
+		currentArticle.append(result.response.docs[0].byline.original);
+
+		$('#top-articles').prepend(currentArticle);		
+
+		
+
+
+
 	}).fail(function(err) {
 		throw err;
 	});
+
+
+
+
 
 })
