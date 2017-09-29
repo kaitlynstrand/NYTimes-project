@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset/css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/nytimes.js"></script>
@@ -26,33 +27,38 @@
 	<div class="container">
 	
 <form id="search-form" class="form-horizontal">
-	<h3> Search Parameters </h3>
-
+	<div class="panel panel-primary" id="search-panel">
+	<div class="panel-heading">	<h3> Search Parameters </h3> </div>
+</div>
 	<div class="form-group">
       <label for="search-term" class="control-label col-sm-3">Search Term: </label>
     <div class="col-sm-9">
-      <input type="text" id="search-term"><br>
+      <input type="text" class="form-control" id="search-term"><br>
 		</div>
 	</div>
 
 	<div class="form-group">
       <label for="number-records" class="control-label col-sm-3">Number of Records to Retrieve: </label>
     <div class="col-sm-9">
-    	<input type="text" id="number-records"><br>
+    	<select class="form-control" id="number-records">
+    		<option> 1 </option>
+    		<option> 5 </option>
+    		<option> 10 </option>
+			</select>
 		</div>
 	</div>
 
 	<div class="form-group">
       <label for="start-year" class="control-label col-sm-3">Start Year (Optional): </label>
        <div class="col-sm-9">
-      <input type="text" id="start-year"><br>
+      <input type="text" class="form-control" id="start-year"><br>
 		</div>
 	</div>
 
 	<div class="form-group">
       <label for="end-year" class="control-label col-sm-3">End Year (Optional): </label>
      <div class="col-sm-9">
-      <input type="text" id="end-year"><br>
+      <input type="text" class="form-control" id="end-year"><br>
 		</div>
 	</div>
 
@@ -66,8 +72,12 @@
    </div>
    </form>	
 
+   <br>
+
   <div class="container">
-  	<h3> Top Articles </h3>
+  <div class="panel panel-primary">
+	<div class="panel-heading">	<h3> Top Articles </h3> </div>
+</div>
   <div id="top-articles">
 
   </div> 
