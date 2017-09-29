@@ -25,26 +25,29 @@
 
 	<div class="container">
 	
-	<form id="search-form">
-      <label for="search-term">Search Term: </label>
+	<form id="search-form" class="form-horizontal">
+		<div class="form-group">
+      
+      <label for="search-term" class="control-label">Search Term: </label>
       <input type="text" id="search-term"><br>
 
-      <label for="number-records">Number of Records to Retrieve: </label>
+      <label for="number-records" class="control-label">Number of Records to Retrieve: </label>
       <input type="text" id="number-records"><br>
 
-      <label for="start-year">Start Year (Optional): </label>
+      <label for="start-year" class="control-label">Start Year (Optional): </label>
       <input type="text" id="start-year"><br>
 
-      <label for="end-year">End Year (Optional): </label>
+      <label for="end-year" class="control-label">End Year (Optional): </label>
       <input type="text" id="end-year"><br>
 
-      <button type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-search"></span> Search </button>
+      <button id="search-btn" type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-search"></span> Search </button>
 
-      <button type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-trash"></span> Clear Results </button>
+      <button id="clear-btn" type="button" class="btn btn-primary"> <span class="glyphicon glyphicon-trash"></span> Clear Results </button>
 
 
       <!-- Button triggers new movie to be added -->
       <!--<input id="add-movie" type="submit" value="Add a Movie Bro"-->
+   </div>
    </form>	
 
 
