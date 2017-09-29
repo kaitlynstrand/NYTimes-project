@@ -1,1 +1,2 @@
 Collaborator Yamini
+Collaborator Kaitlyn Strand
