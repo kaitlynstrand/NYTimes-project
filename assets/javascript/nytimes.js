@@ -28,16 +28,15 @@ $(document).on('click', '#search-btn', function(){
 
 		$('#top-articles').prepend(currentArticle);		
 
-		
-
-
-
 	}).fail(function(err) {
 		throw err;
 	});
 
-
-
-
-
 })
+
+
+$(document).on('click', '#clear-btn', function(){
+
+	$('#top-articles').html('');
+
+	});
